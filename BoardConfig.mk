@@ -117,6 +117,10 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_EDL_MODE := false
 TW_USE_FSCRYPT_POLICY := 1
 
+# Debug
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+
 # Disable Mouse Cursor
 TW_INPUT_BLACKLIST := "hbtp_vm"
 
