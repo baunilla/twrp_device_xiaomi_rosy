@@ -109,6 +109,9 @@ TW_HAS_EDL_MODE := false
 TW_INPUT_BLACKLIST := "hbtp_vm"
 
 TARGET_RECOVERY_DEVICE_MODULES += \
+    ashmemd \
+    ashmemd_aidl_interface-cpp \
+    libashmemd_client \
     libcap \
     libdrm \
     libhardware_legacy \
@@ -119,7 +122,12 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libprocinfo \
     libxml2
 
+TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
+    $(TARGET_OUT_EXECUTABLES)/ashmemd
+
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/ashmemd_aidl_interface-cpp.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libcap.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libdrm.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libhardware_legacy.so \
