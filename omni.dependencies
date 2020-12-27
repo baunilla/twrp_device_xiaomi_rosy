@@ -1,2 +1,8 @@
 [
+  {
+    "remote":      "baunilla",
+    "repository":  "android_kernel_xiaomi_rosy",
+    "target_path": "kernel/xiaomi/rosy"
+    "revision":    "q-318-caf"
+  }
 ]

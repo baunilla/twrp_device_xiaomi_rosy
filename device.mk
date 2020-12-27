@@ -25,7 +25,3 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Recovery
-PRODUCT_COPY_FILES += \
-    device/xiaomi/rosy/zImage-dtb:kernel
