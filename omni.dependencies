@@ -1,5 +1,11 @@
 [
   {
+    "remote":      "TeamWin",
+    "repository":  "android_device_qcom_twrp-common",
+    "target_path": "device/qcom/twrp-common",
+    "revision":    "android-10"
+  },
+  {
     "remote":      "baunilla",
     "repository":  "android_kernel_xiaomi_rosy",
     "target_path": "kernel/xiaomi/rosy"
