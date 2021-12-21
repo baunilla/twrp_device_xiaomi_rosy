@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_rosy.mk
+    $(LOCAL_DIR)/twrp_rosy.mk
