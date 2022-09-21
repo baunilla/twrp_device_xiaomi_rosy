@@ -19,7 +19,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_PLATFORM := msm8953
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Soong namespaces
@@ -29,8 +29,4 @@ PRODUCT_SOONG_NAMESPACES += \
 # QCOM standard decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt
-
-# Apex libraries
-PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/$(PRODUCT_RELEASE_NAME)/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
