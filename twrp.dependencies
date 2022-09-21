@@ -4,11 +4,5 @@
     "repository":  "android_kernel_xiaomi_rosy",
     "target_path": "kernel/xiaomi/rosy"
     "revision":    "lineage-19.1"
-  },
-  {
-    "remote":      "LineageOS",
-    "repository":  "android_vendor_qcom_opensource_cryptfs_hw",
-    "target_path": "vendor/qcom/opensource/cryptfs_hw"
-    "revision":    "lineage-19.1"
   }
 ]
