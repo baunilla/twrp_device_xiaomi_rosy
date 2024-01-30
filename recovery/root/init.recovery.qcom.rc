@@ -35,3 +35,4 @@ on boot
 
 on property:ro.crypto.type=file
     exec u:r:recovery:s0 -- /system/bin/update-fstab.sh
+    setprop ro.crypto.volume.filenames_mode "aes-256-cts"
